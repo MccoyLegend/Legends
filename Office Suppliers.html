@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/79386a15a5.js" crossorigin="anonymous"></script>
+    <title>Legends Office Suppliers</title>
+</head>
+<body>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="index.html#banner">HOME</a></li>
+                <li><a href="index.html#about">ABOUT</a> </li>
+                <li class="dropdown"><a href="index.html#service">SERVICES <span>&lsaquo;</span></a> 
+                    <ul>
+                        <li><a href="Construction.html">BUILDING & CONSTRUCTION</a></li>
+                        <li><a href="#">OFFICE SUPPLIES</a></li>
+                        <li><a href="IT Consultancy.html">IT SOLUTIONS</a></li>
+                    </ul>
+                <li><a href="index.html#clients">CLIENTS</a> </li>
+                <li><a href="#footer">MEET US</a> </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="Images/menu.png" alt="menubutton" id="menu">
+    </div>
+    
+
+    <Section id="Office">
+        <div class=title-text>
+            <p>SERVICES</p>
+            <h1>OFFICE EQUIPMENT SUPPLIERS</h1>
+        </div>
+
+        <div class="webpage">
+            <img src="Images/Webpage-removebg-preview.png" alt="">
+        </div>
+    </Section>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+ 
+        sideNav.style.right = "-250px";
+ 
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src = "Images/close.png";
+            }
+            else{
+                sideNav.style.right = "-250px";
+                menu.src = "Images/menu.png";
+            }
+        }
+        var scroll = new SmoothScroll('a[href*="index.html/#"]', {
+     speed: 1000,
+     speedAsDuration: true
+     });
+     </script>
+
+
+</body>
+</html>
